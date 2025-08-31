@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Abanoup Nassif's personal portfolio website">
-    <title>Abanoup Nassif - Portfolio</title>
+    <meta name="description" content="Amir Madhet's personal portfolio website">
+    <title>Amir Madhet - Portfolio</title>
     <link rel="shortcut icon" href="stock-portfolio-1.png" type="image/x-icon">
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
@@ -15,22 +15,22 @@
     <header class="hero">
         <div class="container">
             <div class="hero-content">
-                <img src="A.jpg" alt="Abanoup Nassif" class="profile-photo">
+                <img src="A.jpg" alt="Amir Madhet" class="profile-photo">
                 <div class="hero-text">
-                    <h1>Abanoup Nassif</h1>
+                    <h1>Amir Madhet</h1>
                     <p>ASU - Computer Science Student</p>
                     <div class="social-links">
                         <a href="https://www.facebook.com/profile.php?id=100005287924332" target="_blank"><i class="fa-brands fa-facebook"></i></a>
                         <a href="https://www.linkedin.com/in/abanoub-nassif-66a628299" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
                         <a href="https://github.com/BeboNasif" target="_blank"><i class="fa-brands fa-github"></i></a>
-                        <a href="Abanoub-NassifCV.pdf" target="_blank">CV</a>
+                        <a href="Amir-MadhetCV.pdf" target="_blank">CV</a>
                     </div>
                 </div>
             </div>
         </div>
     </header>
 
-    <!-- About Me Section (Updated) -->
+    <!-- About Me Section -->
     <section id="about" class="section">
         <div class="container">
             <h2>About Me</h2>
@@ -40,7 +40,7 @@
         </div>
     </section>
 
-    <!-- Projects Section (Updated) -->
+    <!-- Projects Section -->
     <section id="projects" class="section">
         <div class="container">
             <h2>Projects</h2>
@@ -69,7 +69,7 @@
         </div>
     </section>
 
-    <!-- Skills Section (Updated) -->
+    <!-- Skills Section -->
     <section id="skills" class="section">
         <div class="container">
             <h2>Skills</h2>
@@ -85,63 +85,11 @@
         </div>
     </section>
 
-    <!-- Contact Section with Enhanced CSS -->
-    <section id="contact" class="section">
-        <div class="container" id="form">
-            
-            <div class="form">
-                <div class="title">Contact Me</div>
-                <div class="subtitle">Send me a message!</div>
-        
-                <form id="contact-form">
-                    <div class="input-container ic1">
-                        <input type="text" id="name" name="name" class="input" placeholder=" " required>
-                        <div class="cut"></div>
-                        <label for="name" class="placeholder">Name</label>
-                    </div>
-        
-                    <div class="input-container ic2">
-                        <input type="email" id="email" name="email" class="input" placeholder=" " required pattern="[a-zA-Z0-9._%+-]+@gmail\.com$" title="Please enter a valid Gmail address">
-                        <div class="cut cut-short"></div>
-                        <label for="email" class="placeholder">Email</label>
-                    </div>
-        
-                    <div class="input-container ic2" id="message">
-                        <textarea id="message" name="message" class="input" placeholder=" " required></textarea>
-                        <div class="cut cut-short" id="long"></div>
-                        <label for="message" class="placeholder">Message</label>
-                    </div>
-        
-                    <button type="submit" class="submit">Send</button>
-                </form>
-        </div>
-    </section>
-
     <footer>
-        <p>&copy; 2024 Abanoup Nassif. All rights reserved.</p>
+        <p>&copy; 2024 Amir Madhet. All rights reserved.</p>
     </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@2.6.4/dist/email.min.js"></script>
-    <script>
-        (function() {
-            emailjs.init("x1Gwy5aJsV8xx5-EY");
-        })();
-
-        function sendEmail(e) {
-            e.preventDefault();
-
-            emailjs.sendForm('service_vrb1tpp', 'template_xday9ti', e.target)
-                .then(function(response) {
-                    alert('Message sent successfully!');
-                    document.querySelector('form').reset();
-                }, function(error) {
-                    alert('Failed to send message. Please try again.');
-                    console.log('FAILED...', error);
-                });
-        }
-
-        document.querySelector('form').addEventListener('submit', sendEmail);
-    </script>
     <script src="script.js"></script>
 </body>
 </html>
+
